@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evden Online İş Fırsatı - Turkish Digital Global</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons (Phosphor Icons for a clean, modern look) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#e0f2fe', // light blue
+                            DEFAULT: '#0284c7', // trustworthy blue
+                            dark: '#0c4a6e', // deep navy
+                            telegram: '#229ED9' // telegram specific blue
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Animations */
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .pulse-btn {
+            animation: pulse-soft 2s infinite;
+        }
+
+        @keyframes pulse-soft {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(34, 158, 217, 0.4); }
+            50% { box-shadow: 0 0 0 15px rgba(34, 158, 217, 0); }
+        }
+    </style>
+
+    <!-- PASTE META PIXEL CODE HERE -->
+    <!-- 
+    Instructions:
+    1. Go to Meta Events Manager.
+    2. Copy your base Pixel code.
+    3. Paste it directly below this comment, before the </head> tag.
+    -->
+    
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation / Header -->
+    <header class="bg-white shadow-sm py-4 px-6 md:px-12 flex items-center justify-between sticky top-0 z-50">
+        <div class="flex items-center gap-2">
+            <!-- Simple generic logo using icon -->
+            <div class="bg-brand-dark text-white p-2 rounded-lg">
+                <i class="ph ph-buildings text-xl"></i>
+            </div>
+            <span class="font-bold text-xl text-brand-dark tracking-tight">Turkish Digital Global</span>
+        </div>
+        <div class="hidden md:block text-sm font-medium text-slate-500">
+            Güvenilir Dijital Çözümler
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow flex flex-col items-center justify-center w-full max-w-5xl mx-auto px-4 py-12 md:py-20">
+        
+        <!-- Hero Section -->
+        <div class="text-center max-w-3xl fade-in-up">
+            <div class="inline-block bg-brand-light text-brand-dark px-4 py-1.5 rounded-full text-sm font-semibold mb-6 shadow-sm border border-blue-100">
+                🚀 Türkiye Genelinde Yeni Pozisyonlar
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-dark mb-6 leading-tight">
+                Evden Online <span class="text-brand">İş Fırsatı</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 mb-10">
+                Esnek saatlerle evinizin konforunda çalışın. Bilgisayarınız ve internet bağlantınızla hemen kazanmaya başlayın.
+            </p>
+        </div>
+
+        <!-- Duties / Roles Section -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mb-12 fade-in-up delay-100">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-2xl p-8 shadow-md border border-slate-100 flex flex-col items-center text-center transition-transform hover:-translate-y-1 duration-300">
+                <div class="bg-blue-50 text-brand p-4 rounded-full mb-4">
+                    <i class="ph ph-keyboard text-3xl"></i>
+                </div>
+                <h3 class="font-bold text-lg text-brand-dark mb-2">Metin Düzenleme ve Veri Girişi</h3>
+                <p class="text-sm text-slate-500">Sistemlerimize doğru ve hızlı veri girişi sağlayarak süreçlerimizi destekleyin.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-2xl p-8 shadow-md border border-slate-100 flex flex-col items-center text-center transition-transform hover:-translate-y-1 duration-300">
+                <div class="bg-blue-50 text-brand p-4 rounded-full mb-4">
+                    <i class="ph ph-device-mobile-camera text-3xl"></i>
+                </div>
+                <h3 class="font-bold text-lg text-brand-dark mb-2">Sosyal Medya İçerik Yönetimi</h3>
+                <p class="text-sm text-slate-500">Dijital platformlarımızdaki içeriklerin düzenlenmesi ve planlanmasına yardımcı olun.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-2xl p-8 shadow-md border border-slate-100 flex flex-col items-center text-center transition-transform hover:-translate-y-1 duration-300">
+                <div class="bg-blue-50 text-brand p-4 rounded-full mb-4">
+                    <i class="ph ph-headset text-3xl"></i>
+                </div>
+                <h3 class="font-bold text-lg text-brand-dark mb-2">Müşteri İlişkileri Temsilcisi</h3>
+                <p class="text-sm text-slate-500">Kullanıcılardan gelen temel soruları yanıtlayın ve çözüm odaklı destek sağlayın.</p>
+            </div>
+        </div>
+
+        <!-- Call to Action Section -->
+        <div class="w-full flex flex-col items-center bg-white p-8 md:p-12 rounded-3xl shadow-lg border border-slate-100 fade-in-up delay-200">
+            <h2 class="text-2xl md:text-3xl font-bold text-brand-dark mb-4 text-center">Hemen Başvurunuzu Yapın</h2>
+            <p class="text-slate-600 mb-8 text-center max-w-xl">
+                18 yaşını doldurmuş herkes başvuru yapabilir. Başvuru süreci tamamen Telegram üzerinden, güvenli ve hızlı bir şekilde yürütülmektedir.
+            </p>
+            
+            <!-- THE IMPORTANT BUTTON: ID added for Meta Event Tracking -->
+            <a href="https://u2l.ai/turkeycustomersupport" 
+               id="telegram-apply-button"
+               class="pulse-btn flex items-center justify-center gap-3 bg-brand-telegram hover:bg-sky-600 text-white text-lg md:text-xl font-bold py-4 px-8 md:px-12 rounded-full transition-colors duration-300 shadow-lg w-full md:w-auto">
+                <i class="ph-fill ph-telegram-logo text-2xl"></i>
+                Telegram Üzerinden Başvur
+            </a>
+            <p class="text-xs text-slate-400 mt-4 flex items-center gap-1">
+                <i class="ph-fill ph-lock-key"></i> Bilgileriniz gizli tutulmaktadır.
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center mt-auto">
+        <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <p class="text-sm mb-4 md:mb-0">&copy; 2026 Turkish Digital Global Pvt. Ltd. Tüm hakları saklıdır.</p>
+            <div class="flex gap-4 text-sm">
+                <span class="flex items-center gap-1"><i class="ph ph-check-circle"></i> 18+ Yaş</span>
+                <span class="flex items-center gap-1"><i class="ph ph-globe"></i> Uzaktan Çalışma</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

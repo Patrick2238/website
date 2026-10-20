@@ -84,7 +84,6 @@ src="https://www.facebook.com/tr?id=1678752367301807&ev=PageView&noscript=1"
 <body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
 
     <!-- Navigation / Header -->
-    <!-- Reduced padding on mobile (py-3, px-4) to save vertical space -->
     <header class="bg-white shadow-sm py-3 px-4 md:py-4 md:px-12 flex items-center justify-between sticky top-0 z-50">
         <div class="flex items-center gap-2">
             <div class="bg-brand-dark text-white p-1.5 md:p-2 rounded-lg">
@@ -98,7 +97,6 @@ src="https://www.facebook.com/tr?id=1678752367301807&ev=PageView&noscript=1"
     </header>
 
     <!-- Main Content Area -->
-    <!-- Pulled content up on mobile (py-6 instead of py-12) -->
     <main class="flex-grow flex flex-col items-center justify-center w-full max-w-5xl mx-auto px-4 py-6 md:py-16">
         
         <!-- Hero Section -->
@@ -106,7 +104,6 @@ src="https://www.facebook.com/tr?id=1678752367301807&ev=PageView&noscript=1"
             <div class="inline-block bg-brand-light text-brand-dark px-3 py-1 md:px-4 md:py-1.5 rounded-full text-xs md:text-sm font-semibold mb-4 md:mb-6 shadow-sm border border-blue-100">
                 🚀 Türkiye Genelinde Yeni Pozisyonlar
             </div>
-            <!-- Smaller font on mobile (text-3xl) to fit above the fold -->
             <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-brand-dark mb-3 md:mb-6 leading-tight">
                 Evden Online <span class="text-brand">İş Fırsatı</span>
             </h1>
@@ -115,15 +112,13 @@ src="https://www.facebook.com/tr?id=1678752367301807&ev=PageView&noscript=1"
             </p>
         </div>
 
-        <!-- Call to Action Section (TOP POSITION FOR MOBILE VISIBILITY) -->
-        <!-- Adjusted mobile padding (p-6) and typography to be compact yet readable -->
+        <!-- Call to Action Section -->
         <div class="w-full flex flex-col items-center bg-white p-6 md:p-12 rounded-2xl md:rounded-3xl shadow-lg border border-slate-100 fade-in-up delay-100 mb-10 md:mb-12">
             <h2 class="text-xl md:text-3xl font-bold text-brand-dark mb-3 md:mb-4 text-center">Hemen Başvurunuzu Yapın</h2>
             <p class="text-sm md:text-base text-slate-600 mb-6 md:mb-8 text-center max-w-xl">
                 18 yaşını doldurmuş herkes başvuru yapabilir. Başvuru süreci tamamen Telegram üzerinden, güvenli ve hızlı bir şekilde yürütülmektedir.
             </p>
             
-            <!-- THE IMPORTANT BUTTON: Massive touch target for thumbs WITH META LEAD TRACKING -->
             <a href="https://u2l.ai/Turkey-website" 
                id="telegram-apply-button"
                onclick="fbq('track', 'Lead');"
@@ -131,6 +126,15 @@ src="https://www.facebook.com/tr?id=1678752367301807&ev=PageView&noscript=1"
                 <i class="ph-fill ph-telegram-logo text-2xl"></i>
                 Telegram Üzerinden Başvur
             </a>
+
+            <!-- Added Instruction Box (Meta-Safe, Professional UX) -->
+            <div class="mt-5 p-3 bg-slate-50 border border-slate-200 rounded-lg max-w-md w-full text-center shadow-sm">
+                <p class="text-sm text-slate-700 font-medium flex items-center justify-center gap-1.5">
+                    <i class="ph-fill ph-info text-brand text-lg"></i>
+                    Not: Telegram açıldığında alt kısımdaki <span class="font-bold text-brand-dark">'BAŞLAT'</span> butonuna tıklamayı unutmayın.
+                </p>
+            </div>
+
             <p class="text-xs text-slate-400 mt-4 flex items-center gap-1 justify-center">
                 <i class="ph-fill ph-lock-key"></i> Bilgileriniz gizli tutulmaktadır.
             </p>
